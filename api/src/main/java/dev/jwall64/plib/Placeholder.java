@@ -3,6 +3,7 @@ package dev.jwall64.plib;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
+import java.util.function.Function;
 
 public record Placeholder<T, P>(String name, Class<T> clazz, PlaceholderSupplier<T, P> supplier, @Nullable ParameterTransformer<P> transformer) {
 
@@ -26,8 +27,12 @@ public record Placeholder<T, P>(String name, Class<T> clazz, PlaceholderSupplier
         return new PlaceholderInstance<>(this, param);
     }
 
-    public Optional<T> resolve(ResolveContext<T, P> context) {
+    public Optional<T> resolve(ResolveContext<P> context) {
         return supplier.get(context);
+    }
+
+    public <O> Placeholder<O, P> map(Class<O> clazz, Function<T, O> mapper) {
+        return new Placeholder<>(name, clazz, supplier.map(mapper), transformer);
     }
 
 }

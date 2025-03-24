@@ -5,7 +5,7 @@ import dev.jwall64.mdcfg.ConfigSection;
 import dev.jwall64.mdcfg.codec.FileCodecRegistry;
 import dev.jwall64.mdcfg.codec.FileWrapper;
 import dev.jwall64.mdcfg.serializer.ConfigContext;
-import dev.jwall64.plib.PlaceholderContext;
+import dev.jwall64.plib.PipelineContext;
 import dev.jwall64.plib.UnresolvedMessage;
 
 import java.nio.file.Path;
@@ -33,7 +33,7 @@ public interface LangProvider {
             for(String key : sec.getKeys()) {
                 ConfigObject obj = sec.get(key);
                 if(!obj.isString()) continue;
-                messages.put(key, manager.parser.accept(obj.asString(), PlaceholderContext.of(manager)));
+                messages.put(key, manager.parser.accept(obj.asString(), PipelineContext.of(manager)));
             }
 
             return Optional.of(new LangRegistry(Map.copyOf(messages)));

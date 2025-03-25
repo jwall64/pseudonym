@@ -1,7 +1,5 @@
 package dev.jwall64.plib.text;
 
-import dev.jwall64.plib.Color;
-
 import java.util.ArrayList;
 import java.util.List;
 

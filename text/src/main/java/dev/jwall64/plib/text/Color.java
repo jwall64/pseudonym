@@ -1,4 +1,4 @@
-package dev.jwall64.plib;
+package dev.jwall64.plib.text;
 
 import java.util.Comparator;
 import java.util.HexFormat;

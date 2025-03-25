@@ -2,7 +2,6 @@ package dev.jwall64.plib.text;
 
 import dev.jwall64.mdcfg.serializer.InlineSerializer;
 import dev.jwall64.mdcfg.serializer.Serializer;
-import dev.jwall64.plib.Color;
 
 import java.util.Arrays;
 import java.util.function.Function;

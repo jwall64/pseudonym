@@ -1,7 +1,6 @@
 package dev.jwall64.plib.text;
 
 import dev.jwall64.mdcfg.Tuples;
-import dev.jwall64.plib.Color;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;

@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import dev.jwall64.plib.Color;
+import dev.jwall64.plib.text.Color;
 import dev.jwall64.plib.text.Component;
 import dev.jwall64.plib.text.ConfigTextParser;
 import dev.jwall64.plib.text.Style;

@@ -3,7 +3,6 @@ package dev.jwall64.plib.text;
 import dev.jwall64.mdcfg.registry.Identifier;
 import dev.jwall64.mdcfg.serializer.ObjectSerializer;
 import dev.jwall64.mdcfg.serializer.Serializer;
-import dev.jwall64.plib.Color;
 
 
 public record Style(Color color, Boolean bold, Boolean italic, Boolean underlined, Boolean strikethrough,

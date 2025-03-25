@@ -25,7 +25,9 @@ dependencies {
     compileOnly(libs.jetbrains.annotations)
 
     include(project(":api"))
+    include(project(":lang"))
     implementation(project(":api"))
+    implementation(project(":lang"))
 
     modApi(include("dev.jwall64:midnightcfg-api:3.0.1")!!)
 }

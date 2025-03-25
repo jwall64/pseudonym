@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import dev.jwall64.plib.*;
+import dev.jwall64.pseudonym.*;
 
 import java.util.Optional;
 

@@ -4,9 +4,9 @@ import dev.jwall64.mdcfg.ConfigList;
 import dev.jwall64.mdcfg.ConfigPrimitive;
 import dev.jwall64.mdcfg.ConfigSection;
 import dev.jwall64.mdcfg.serializer.ConfigContext;
-import dev.jwall64.plib.text.Component;
-import dev.jwall64.plib.text.Style;
-import dev.jwall64.plib.text.TextColor;
+import dev.jwall64.pseudonym.text.Component;
+import dev.jwall64.pseudonym.text.Style;
+import dev.jwall64.pseudonym.text.TextColor;
 
 public class TestComponents {
 

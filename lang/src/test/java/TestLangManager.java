@@ -1,9 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import dev.jwall64.plib.*;
-import dev.jwall64.plib.lang.LangManager;
-import dev.jwall64.plib.lang.LangProvider;
-import dev.jwall64.plib.lang.LangRegistry;
+import dev.jwall64.pseudonym.*;
+import dev.jwall64.pseudonym.lang.LangManager;
+import dev.jwall64.pseudonym.lang.LangProvider;
+import dev.jwall64.pseudonym.lang.LangRegistry;
 
 import java.util.Map;
 import java.util.Optional;

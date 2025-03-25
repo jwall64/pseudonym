@@ -2,8 +2,8 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import dev.jwall64.plib.*;
-import dev.jwall64.plib.mc.TextUtil;
+import dev.jwall64.pseudonym.*;
+import dev.jwall64.pseudonym.mc.TextUtil;
 
 import java.util.Optional;
 

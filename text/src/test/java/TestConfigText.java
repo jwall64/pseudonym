@@ -1,10 +1,10 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import dev.jwall64.plib.text.Color;
-import dev.jwall64.plib.text.Component;
-import dev.jwall64.plib.text.ConfigTextParser;
-import dev.jwall64.plib.text.Style;
-import dev.jwall64.plib.text.TextColor;
+import dev.jwall64.pseudonym.text.Color;
+import dev.jwall64.pseudonym.text.Component;
+import dev.jwall64.pseudonym.text.ConfigTextParser;
+import dev.jwall64.pseudonym.text.Style;
+import dev.jwall64.pseudonym.text.TextColor;
 
 
 public class TestConfigText {

@@ -1,4 +1,4 @@
-package dev.jwall64.pseudonym.mc;
+package dev.jwall64.pseudonym.mc.api;
 
 import net.minecraft.network.chat.Component;
 import dev.jwall64.pseudonym.MessageConverter;

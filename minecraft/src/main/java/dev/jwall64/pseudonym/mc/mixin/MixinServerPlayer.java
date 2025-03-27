@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import dev.jwall64.pseudonym.lang.LocaleHolder;
 
 @Mixin(ServerPlayer.class)
-@Implements(@Interface(iface= LocaleHolder.class, prefix="pseudonym$"))
+@Implements(@Interface(iface = LocaleHolder.class, prefix="pseudonym$"))
 public class MixinServerPlayer {
 
     @Shadow private String language;

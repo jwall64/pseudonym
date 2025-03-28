@@ -1,0 +1,7 @@
+{
+  "name": "ptell",
+  "type": "builder",
+  "value": "dev.jwall64.pseudonym.mc.impl.MainCommand::builder",
+  "permission_level": 2,
+  "permission_node": "pseudonym.command"
+}

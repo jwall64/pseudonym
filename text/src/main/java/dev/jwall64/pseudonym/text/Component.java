@@ -1,13 +1,15 @@
 package dev.jwall64.pseudonym.text;
 
 import dev.jwall64.mdcfg.serializer.*;
+import dev.jwall64.pseudonym.Message;
+import dev.jwall64.pseudonym.PipelineContext;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Supplier;
 
-public interface Component {
+public interface Component extends Message<Component> {
 
     Content content();
 
@@ -15,6 +17,10 @@ public interface Component {
 
     List<Component> children();
 
+    @Override
+    default Component get(PipelineContext context) {
+        return this;
+    }
 
     default MutableComponent copy() {
         return new MutableComponent(content(), style(), children());

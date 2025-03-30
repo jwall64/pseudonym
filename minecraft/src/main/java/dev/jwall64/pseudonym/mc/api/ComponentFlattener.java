@@ -4,9 +4,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.contents.PlainTextContents;
 import dev.jwall64.pseudonym.MessagePipeline;
 import dev.jwall64.pseudonym.PipelineContext;
-import dev.jwall64.pseudonym.UnresolvedMessage;
+import dev.jwall64.pseudonym.PartialMessage;
 
-public class ComponentFlattener implements MessagePipeline.PipelineStage<UnresolvedMessage<String>, UnresolvedMessage<String>> {
+public class ComponentFlattener<T> implements MessagePipeline.PipelineStage<PartialMessage<T>, PartialMessage<T>> {
 
     public static String flatten(Component component) {
 
@@ -23,7 +23,7 @@ public class ComponentFlattener implements MessagePipeline.PipelineStage<Unresol
     }
 
     @Override
-    public UnresolvedMessage<String> apply(UnresolvedMessage<String> message, PipelineContext ctx) {
+    public PartialMessage<T> apply(PartialMessage<T> message, PipelineContext ctx) {
         return message.mapPlaceholders(Component.class, String.class, ComponentFlattener::flatten);
     }
 }

@@ -2,7 +2,7 @@ package dev.jwall64.pseudonym.text;
 
 import dev.jwall64.pseudonym.MessageConverter;
 import dev.jwall64.pseudonym.PipelineContext;
-import dev.jwall64.pseudonym.UnresolvedMessage;
+import dev.jwall64.pseudonym.PartialMessage;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ public class SplitComponentParser implements MessageConverter<String, List<Compo
     }
 
     @Override
-    public UnresolvedMessage<List<Component>> apply(UnresolvedMessage<String> message, PipelineContext ctx) {
+    public PartialMessage<List<Component>> apply(PartialMessage<String> message, PipelineContext ctx) {
         return message.map(parser::parseSplit);
     }
 }

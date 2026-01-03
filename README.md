@@ -11,7 +11,7 @@ repositories {
     maven("https://maven.jwall64.dev/releases")
 }
 dependencies {
-    implementation("dev.jwall64:pseudonym-api:0.4.1")
+    implementation("dev.jwall64:pseudonym-api:0.4.4")
 }
 ```
 

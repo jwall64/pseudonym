@@ -33,5 +33,5 @@ dependencies {
     }
 
     modImplementation(libs.midnightcfg.minecraft)
-    modImplementation("dev.jwall64:databridge:0.9.0")
+    modImplementation("dev.jwall64:databridge:0.10.0")
 }

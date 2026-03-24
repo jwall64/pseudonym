@@ -5,9 +5,9 @@ plugins {
 
 dependencies {
 
-    api("dev.jwall64:midnightcfg-api:3.1.0")
-    api("dev.jwall64:midnightcfg-codec-nbt:3.1.0")
-    api("dev.jwall64:midnightcfg-api-sql:3.1.0")
+    api(libs.midnightcfg.api)
+    api(libs.midnightcfg.api.sql)
+    api(libs.midnightcfg.codec.nbt)
     api(project(":api"))
 
     compileOnly(libs.jetbrains.annotations)

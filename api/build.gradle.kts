@@ -5,6 +5,6 @@ plugins {
 
 dependencies {
 
-    api("dev.jwall64:midnightcfg-api:3.0.1")
+    api(libs.midnightcfg.api)
     compileOnly(libs.jetbrains.annotations)
 }

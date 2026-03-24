@@ -2,7 +2,7 @@
 junit = "5.10.2"
 slf4j = "2.0.16"
 jbr-anno = "24.0.1"
-mdcfg = "3.5.2"
+mdcfg = "3.5.3-SNAPSHOT"
 
 [libraries]
 jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref="jbr-anno" }
@@ -12,6 +12,7 @@ slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
 slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
 
 midnightcfg-api = { module = "dev.jwall64:midnightcfg-api", version.ref="mdcfg" }
+midnightcfg-api-sql = { module = "dev.jwall64:midnightcfg-api-sql", version.ref="mdcfg" }
 midnightcfg-codec-json = { module = "dev.jwall64:midnightcfg-codec-json", version.ref="mdcfg" }
 midnightcfg-codec-nbt = { module = "dev.jwall64:midnightcfg-codec-nbt", version.ref="mdcfg" }
 midnightcfg-minecraft = { module = "dev.jwall64:midnightcfg-platform-minecraft", version.ref="mdcfg" }

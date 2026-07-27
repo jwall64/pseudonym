@@ -32,7 +32,7 @@ dependencies {
     }
 
     implementation(libs.midnightcfg.minecraft)
-    implementation("dev.jwall64:databridge:0.12.1-SNAPSHOT")
+    implementation("dev.jwall64:databridge:0.12.1")
 
     // Gametest API modules
     val testApiModules = listOf(

@@ -11,7 +11,7 @@ repositories {
     maven("https://maven.jwall64.dev/releases")
 }
 dependencies {
-    implementation("dev.jwall64:pseudonym-api:0.4.4")
+    implementation("dev.jwall64:pseudonym-api:0.4.6")
 }
 ```
 
@@ -228,13 +228,15 @@ public static void main(String[] args) {
     PlaceholderManager manager = new PlaceholderManager();
     manager.register(Placeholder.of("player_name", Component.class, ctx -> ctx.getFirst(Player.class).map(Player::getDisplayName)));
 
+    PipelineContext ctx = PipelineContext.of(new Player(Component.text("Steve")));
+
     MessagePipeline<String, Component> pipeline =
             MessagePipeline.<String>builder()
-                    .add(new PlaceholderParser())
+                    .add(new PlaceholderParser(manager))
                     .add(TextUtil.COMPONENT_RESOLVER)
                     .build();
     
-    Component out = pipeline.accept("&6Hello, <player_name>"); // Will become {"text":"Hello, ","color":"gold","extra":[{"text":"Steve",...}]}
+    Component out = pipeline.accept("&6Hello, <player_name>", ctx); // Will become {"text":"Hello, ","color":"gold","extra":[{"text":"Steve"}]}
     
 }
 ```

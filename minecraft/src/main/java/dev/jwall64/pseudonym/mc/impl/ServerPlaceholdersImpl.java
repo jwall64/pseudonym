@@ -1,6 +1,5 @@
 package dev.jwall64.pseudonym.mc.impl;
 
-import net.minecraft.core.ClientAsset.ResourceTexture;
 import net.minecraft.data.AtlasIds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -9,19 +8,14 @@ import net.minecraft.network.chat.contents.objects.AtlasSprite;
 import net.minecraft.network.chat.contents.objects.PlayerSprite;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.Util;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.PlayerSkin;
 import net.minecraft.world.item.component.ResolvableProfile;
 
 import dev.jwall64.mdcfg.ConfigSection;
 import dev.jwall64.mdcfg.mc.api.ConfigOps;
 import dev.jwall64.pseudonym.*;
 import dev.jwall64.pseudonym.lang.LangManager;
-
-import com.mojang.authlib.GameProfile;
-import com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService;
 
 import java.util.List;
 import java.util.Optional;
